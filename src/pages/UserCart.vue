@@ -29,6 +29,7 @@ export default {
       return this.$store.getters['cart/totalSum']
     },
     cartItems(){
+      console.log(this.$store.getters['cart/products']);
       return this.$store.getters['cart/products']
     }
   }

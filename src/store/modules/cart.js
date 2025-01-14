@@ -17,6 +17,7 @@ export default {
             if (productInCartIndex >= 0) {
                 state.items[productInCartIndex].qty++;
             } else {
+                console.log(productData);
                 const newItem = {
                     productId: productData.id,
                     title: productData.title,
